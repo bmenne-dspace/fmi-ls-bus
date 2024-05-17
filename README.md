@@ -24,9 +24,7 @@ and downloaded.
 
 ## Roadmap
 
-<center>
 ![roadmap of fmi-ls-bus](roadmap_overview.svg)
-</center>
 
 ## Repository Structure
 - `docs` -- Sources of the specification document
