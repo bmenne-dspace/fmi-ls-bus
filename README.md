@@ -14,7 +14,7 @@ organisations prior to official adoption.
 
 The [FMI 3.0 Layered Standard Network Communication][spec] is currently
 maintained on [GitHub][githubspec] and is based on the [FMI][] standard.
-The current state of development is published [here][spec]. This document status
+The current state of development is published [here][spec] and
 contains all bus types that are currently in development or are already final.
 [Official releases][releases] are directly published via GitHub.
 
