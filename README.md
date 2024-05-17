@@ -49,6 +49,10 @@ Code and documentation copyright (C) 2008-2011 the MODELISAR consortium and 2012
 Code released under the [2-Clause BSD License].
 Docs released under [Attribution-ShareAlike 4.0 International].
 
+## test
+![roadmap of fmi-ls-bus](roadmap.svg)
+
+
 [FMI]: https://fmi-standard.org/
 [Demo FMUs]: https://github.com/modelica/fmi-guides/tree/main/ls-bus-guide/demos
 [2-Clause BSD License]: https://opensource.org/licenses/BSD-2-Clause
