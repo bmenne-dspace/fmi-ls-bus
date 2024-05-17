@@ -16,7 +16,7 @@ The [FMI 3.0 Layered Standard Network Communication][spec] is currently
 maintained on [GitHub][githubspec] and is based on the [FMI][] standard.
 The current state of development is published [here][spec]. This document status
 contains all bus types that are currently in development or are already final.
-[Releases][releases] are directly published via GitHub.
+[Official releases][releases] are directly published via GitHub.
 
 ## Roadmap
 Different abstraction layers and types of buses are developed in different versions that build on each other.
@@ -25,6 +25,8 @@ been defined for this purpose.
 The following graphic provides an overview of the planned sequence of supported bus systems:
 
 ![roadmap of fmi-ls-bus](roadmap_overview.svg)
+
+A detailed roadmap showing completed, current and future work can be accessed [here][roadmap.svg].
 
 ## Repository Structure
 - `docs` -- Sources of the specification document
