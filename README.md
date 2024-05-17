@@ -60,7 +60,7 @@ Docs released under [Attribution-ShareAlike 4.0 International].
 [2-Clause BSD License]: https://opensource.org/licenses/BSD-2-Clause
 [Attribution-ShareAlike 4.0 International]: https://creativecommons.org/licenses/by-sa/4.0/
 [githubspec]: docs/index.adoc
-[roadmap]: roadmap.svg
+[roadmap]: https://raw.githubusercontent.com/bmenne-dspace/fmi-ls-bus/main/roadmap.svg
 [spec]: https://modelica.github.io/fmi-ls-bus/main/
 [milestones]: https://github.com/modelica/fmi-ls-bus/milestones?direction=asc&sort=title&state=open
 [releases]: https://github.com/modelica/fmi-ls-bus/releases
