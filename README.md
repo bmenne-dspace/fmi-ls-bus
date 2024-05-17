@@ -17,13 +17,13 @@ maintained on [GitHub][githubspec] and is based on the [FMI][] standard.
 The current state of development is published [here][spec]. This document status
 contains all bus types that are currently in development or are already final.
 Different types of buses are developed in different versions that build on each other.
-Corresponding [milestones][milestones] and a detailed [roadmap][roadmap] have
+Corresponding [milestones][milestones] and a detailed roadmap have
 been defined for this purpose.
-Based on the defined [roadmap][roadmap], published [releases][releases] can be examined
+Based on the defined roadmap, published [releases][releases] can be examined
 and downloaded.
 
 ## Roadmap
-![roadmap of fmi-ls-bus](roadmap.svg)
+![roadmap of fmi-ls-bus](roadmap_overview.svg)
 
 ## Repository Structure
 - `docs` -- Sources of the specification document
