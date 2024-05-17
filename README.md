@@ -26,7 +26,7 @@ The following graphic provides an overview of the planned sequence of supported 
 
 ![roadmap of fmi-ls-bus](roadmap_overview.svg)
 
-A detailed roadmap showing completed, current and future work can be accessed [here][roadmap.svg].
+A detailed roadmap showing completed, current and future work can be accessed [here][roadmap].
 
 ## Repository Structure
 - `docs` -- Sources of the specification document
@@ -60,7 +60,7 @@ Docs released under [Attribution-ShareAlike 4.0 International].
 [2-Clause BSD License]: https://opensource.org/licenses/BSD-2-Clause
 [Attribution-ShareAlike 4.0 International]: https://creativecommons.org/licenses/by-sa/4.0/
 [githubspec]: docs/index.adoc
-[roadmap]: Roadmap.md
+[roadmap]: roadmap.svg
 [spec]: https://modelica.github.io/fmi-ls-bus/main/
 [milestones]: https://github.com/modelica/fmi-ls-bus/milestones?direction=asc&sort=title&state=open
 [releases]: https://github.com/modelica/fmi-ls-bus/releases
