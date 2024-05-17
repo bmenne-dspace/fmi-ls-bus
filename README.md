@@ -22,6 +22,9 @@ been defined for this purpose.
 Based on the defined [roadmap][roadmap], published [releases][releases] can be examined
 and downloaded.
 
+## Roadmap
+![roadmap of fmi-ls-bus](roadmap.svg)
+
 ## Repository Structure
 - `docs` -- Sources of the specification document
 - `headers` -- Header files of the C-API
@@ -48,10 +51,6 @@ The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-nor
 Code and documentation copyright (C) 2008-2011 the MODELISAR consortium and 2012-2024 the Modelica Association Project FMI.
 Code released under the [2-Clause BSD License].
 Docs released under [Attribution-ShareAlike 4.0 International].
-
-## test
-![roadmap of fmi-ls-bus](roadmap.svg)
-
 
 [FMI]: https://fmi-standard.org/
 [Demo FMUs]: https://github.com/modelica/fmi-guides/tree/main/ls-bus-guide/demos
