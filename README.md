@@ -52,9 +52,9 @@ The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-nor
 
 ## Tools
 
-|Name|Type/Supported System Compositions|High-Cut|Low-Cut|Contact
+|Name|Type/Supported System Compositions|High-Cut|Low-Cut|Contact/More Info
 |---|---|---|---|---|
-Altair Activate|Direct Communication <br> Composition with dedicated Bus Simulation FMU|X|CAN, FlexRay|<http://www.altair.de>
+Altair Activate|![DC](DC.svg)|X|CAN, FlexRay|<http://www.altair.de>
 AVL FMU Sim|Direct Communication <br> Composition with dedicated Bus Simulation FMU|X|CAN, FlexRay|<http://www.avl.de>
 dSPACE SystemDesk|Exporter|-|CAN, FlexRay|<http://www.dspace.de>
 dSPACE VEOS|Importer with Integrated Bus Simulation|-|CAN, FlexRay|<http://www.dspace.de>
