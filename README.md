@@ -52,13 +52,13 @@ The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-nor
 
 ## Tools
 
-|Name|Type|High-Cut|Low-Cut|Contact/More Info
-|---|---|---|---|---|
-Altair Activate|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|<http://www.altair.de>
-AVL FMU Sim|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|<http://www.avl.de>
-dSPACE SystemDesk|![Exporter](Exporter.svg)|-|CAN, FlexRay|<http://www.dspace.de>
-dSPACE VEOS|![IBS](IBS.svg)|-|CAN, FlexRay|<http://www.dspace.de>
-Synopsis Silver|![IBS](IBS.svg)|-|CAN|<http://www.silver.de>
+|Name|Supported Compositions|High-Cut|Low-Cut|State|Contact
+|---|---|---|---|---|---|
+Altair Activate|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|Prototype|<http://www.altair.de>
+AVL FMU Sim|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|Prototype|<http://www.avl.de>
+dSPACE SystemDesk|![Exporter](Exporter.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
+dSPACE VEOS|![IBS](IBS.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
+Synopsis Silver|![IBS](IBS.svg)|-|CAN|Prototype|<http://www.silver.de>
 
 ## Copyright and License
 Code and documentation copyright (C) 2023-2024 The Modelica Association Project FMI.
