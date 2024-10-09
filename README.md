@@ -52,7 +52,7 @@ The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-nor
 
 ## Tools
 
-|Name|Type/Supported System Compositions|High-Cut|Low-Cut|Contact/More Info
+|Name|Type|High-Cut|Low-Cut|Contact/More Info
 |---|---|---|---|---|
 Altair Activate|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|<http://www.altair.de>
 AVL FMU Sim|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|<http://www.avl.de>
