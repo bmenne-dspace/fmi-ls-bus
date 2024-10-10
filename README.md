@@ -57,15 +57,15 @@ Feel free to contact the specified tool vendors if you are interested in using t
 
 |Name|Supported Compositions|High-Cut|Low-Cut|Contact
 |---|---|:-:|---|---|
-Altair Activate|![DC](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/DC.svg) ![BSF](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/BSF.svg)|X|CAN, FlexRay|<http://www.altair.de>
-AVL FMU Sim|![DC](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/DC.svg) ![BSF](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/BSF.svg)|X|CAN, FlexRay|<http://www.avl.de>
+Altair Activate|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/BSF.svg)|X|CAN, FlexRay|<http://www.altair.de>
+AVL FMU Sim|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/BSF.svg)|X|CAN, FlexRay|<http://www.avl.de>
 dSPACE SystemDesk|![Exporter](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/Exp.svg)|-|CAN, FlexRay|<http://www.dspace.de>
-dSPACE VEOS|![IBS](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/IBS.svg)|-|CAN, FlexRay|<http://www.dspace.de>
-Synopsis Silver<sup>*</sup>|![https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/IBS](IBS.svg)|-|CAN|<http://www.silver.de>
+dSPACE VEOS|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/IBS.svg)|-|CAN, FlexRay|<http://www.dspace.de>
+Synopsis Silver<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/IBS.svg)|-|CAN|<http://www.silver.de>
 
 <sup>*</sup> Implementation has prototype state and is not part of the release
 
-![Tool Legend](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/tool_legend.svg)
+![Legend of supported system compositions of tools](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/tool_legend.svg)
 
 ## Copyright and License
 Code and documentation copyright (C) 2023-2024 The Modelica Association Project FMI.
