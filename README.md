@@ -53,6 +53,7 @@ The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-nor
 ## Tools
 The following list shows simulators/importers that currently support the fmi-ls-bus layered standard and that have been validated by a cross-check.
 It should be noted that the implementation in some tools is either in prototype status or shipped within the normal release.
+Feel free to contact the specified tool vendors if you are interested in using the fmi-ls-bus layered standard.
 
 |Name|Supported Compositions|High-Cut|Low-Cut|State|Contact
 |---|---|:-:|---|---|---|
