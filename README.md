@@ -51,7 +51,7 @@ See also the overview pages for the demos, categorized by the different supporte
 The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-normative recommendations and guidance to implementers of the Functional Mock-up Interface Layered Standard Network Communication (FMI-LS-BUS).
 
 ## Tools
-The following list shows simulators/importers that currently support the fmi-ls-bus layered standard and that have been validated by a cross-check.
+The following list shows importers that currently support the fmi-ls-bus layered standard and that have been validated by a cross-check.
 It should be noted that the implementation in some tools is either in prototype status or shipped within the normal release.
 Feel free to contact the specified tool vendors if you are interested in using the fmi-ls-bus layered standard.
 
