@@ -58,11 +58,11 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
 
 |Name|Supported Compositions|High-Cut|Low-Cut|Contact
 |---|---|:-:|---|---|
-Altair Activate|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/BSF.svg)|X|CAN, FlexRay|<http://www.altair.de>
-AVL FMU Sim|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/BSF.svg)|X|CAN, FlexRay|<http://www.avl.de>
-dSPACE SystemDesk|![Exporter](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/Exp.svg)|-|CAN, FlexRay|<http://www.dspace.de>
-dSPACE VEOS<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN, FlexRay|<http://www.dspace.de>
-Synopsis Silver<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN|<http://www.silver.de>
+Altair Activate|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/BSF.svg)|X|CAN, FlexRay|[http://www.altair.de](https://www.altair.de/activate/)
+AVL FMU Sim|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/BSF.svg)|X|CAN, FlexRay|[http://www.avl.de](https://www.avl.de/)
+dSPACE SystemDesk|![Exporter](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/Exp.svg)|-|CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/system_architecture_software/systemdesk.cfm)
+dSPACE VEOS<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)
+Synopsis Silver<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN|[https://www.synopsys.com](https://www.synopsys.com/verification/virtual-prototyping/silver.html)
 
 <sup>*</sup> Implementation has prototype state and is not part of the release
 
