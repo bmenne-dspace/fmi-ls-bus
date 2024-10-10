@@ -55,13 +55,15 @@ The following list shows simulators/importers that currently support the fmi-ls-
 It should be noted that the implementation in some tools is either in prototype status or shipped within the normal release.
 Feel free to contact the specified tool vendors if you are interested in using the fmi-ls-bus layered standard.
 
-|Name|Supported Compositions|High-Cut|Low-Cut|State|Contact
-|---|---|:-:|---|---|---|
-Altair Activate|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|Prototype|<http://www.altair.de>
-AVL FMU Sim|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|Prototype|<http://www.avl.de>
-dSPACE SystemDesk|![Exporter](Exp.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
-dSPACE VEOS|![IBS](IBS.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
-Synopsis Silver|![IBS](IBS.svg)|-|CAN|Prototype|<http://www.silver.de>
+|Name|Supported Compositions|High-Cut|Low-Cut|Contact
+|---|---|:-:|---|---|
+Altair Activate|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|<http://www.altair.de>
+AVL FMU Sim|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|<http://www.avl.de>
+dSPACE SystemDesk|![Exporter](Exp.svg)|-|CAN, FlexRay|<http://www.dspace.de>
+dSPACE VEOS|![IBS](IBS.svg)|-|CAN, FlexRay|<http://www.dspace.de>
+Synopsis Silver<sup>*</sup>|![IBS](IBS.svg)|-|CAN|<http://www.silver.de>
+
+<sup>*</sup> Implementation has prototype state and is not part of the release
 
 ![Tool Legend](tool_legend.svg)
 
