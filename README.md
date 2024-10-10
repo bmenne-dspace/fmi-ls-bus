@@ -61,7 +61,7 @@ Altair Activate|![DC](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/DC.s
 AVL FMU Sim|![DC](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/DC.svg) ![BSF](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/BSF.svg)|X|CAN, FlexRay|<http://www.avl.de>
 dSPACE SystemDesk|![Exporter](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/Exp.svg)|-|CAN, FlexRay|<http://www.dspace.de>
 dSPACE VEOS|![IBS](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/IBS.svg)|-|CAN, FlexRay|<http://www.dspace.de>
-Synopsis Silver<sup>*</sup>|![IBS](IBS.svg)|-|CAN|<http://www.silver.de>
+Synopsis Silver<sup>*</sup>|![https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/IBS](IBS.svg)|-|CAN|<http://www.silver.de>
 
 <sup>*</sup> Implementation has prototype state and is not part of the release
 
