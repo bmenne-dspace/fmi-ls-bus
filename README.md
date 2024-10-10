@@ -64,8 +64,8 @@ dSPACE SystemDesk|![Exporter](https://github.com/bmenne-dspace/fmi-ls-bus/blob/m
 dSPACE VEOS<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)
 Synopsis Silver<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN|[https://www.synopsys.com](https://www.synopsys.com/verification/virtual-prototyping/silver.html)
 
-<sup>*</sup>Implementation has prototype state and is not part of the release
-<sup>**</sup>Own Bus Simulation FMU required
+<sup><sup>*</sup> Implementation has prototype state and is not part of the release</sup>
+<sup><sup>**</sup> Own Bus Simulation FMU required</sup>
 
 ![Legend of supported system compositions of tools](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/tool_legend.svg)
 
