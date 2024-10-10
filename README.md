@@ -51,6 +51,8 @@ See also the overview pages for the demos, categorized by the different supporte
 The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-normative recommendations and guidance to implementers of the Functional Mock-up Interface Layered Standard Network Communication (FMI-LS-BUS).
 
 ## Tools
+The following list shows simulators/importers that currently support the fmi-ls-bus layered standard and that have been validated by a cross-check.
+It should be noted that the implementation in some tools is either in prototype status or shipped within the normal release.
 
 |Name|Supported Compositions|High-Cut|Low-Cut|State|Contact
 |---|---|:-:|---|---|---|
@@ -59,6 +61,8 @@ AVL FMU Sim|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|Prototype|<http://www.a
 dSPACE SystemDesk|![Exporter](Exp.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
 dSPACE VEOS|![IBS](IBS.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
 Synopsis Silver|![IBS](IBS.svg)|-|CAN|Prototype|<http://www.silver.de>
+
+![Tool Legend](tool_legend.svg)
 
 ## Copyright and License
 Code and documentation copyright (C) 2023-2024 The Modelica Association Project FMI.
