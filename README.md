@@ -56,7 +56,7 @@ The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-nor
 |---|---|---|---|---|---|
 Altair Activate|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|Prototype|<http://www.altair.de>
 AVL FMU Sim|![DC](DC.svg) ![BSF](BSF.svg)|X|CAN, FlexRay|Prototype|<http://www.avl.de>
-dSPACE SystemDesk|![Exporter](Exporter.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
+dSPACE SystemDesk|![Exporter](Exp.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
 dSPACE VEOS|![IBS](IBS.svg)|-|CAN, FlexRay|Release|<http://www.dspace.de>
 Synopsis Silver|![IBS](IBS.svg)|-|CAN|Prototype|<http://www.silver.de>
 
