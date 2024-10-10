@@ -54,6 +54,7 @@ The [FMI LS Bus Implementers' Guide] is a free resource intended to give non-nor
 The following list shows importers that currently support the fmi-ls-bus layered standard and that have been validated by a cross-check.
 It should be noted that the implementation in some tools is either in prototype status or shipped within the normal release.
 Feel free to contact the specified tool vendors if you are interested in using the fmi-ls-bus layered standard.
+Additionally, any FMU importer that supports the necessary FMI 3.0 features, such as clocks and binary variables, has generic fmi-ls-bus support and can be used.
 
 |Name|Supported Compositions|High-Cut|Low-Cut|Contact
 |---|---|:-:|---|---|
