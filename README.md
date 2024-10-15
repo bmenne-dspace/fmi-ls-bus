@@ -58,11 +58,11 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
 
 |Name|Exporter|Importer|Features|Contact
 |---|:-:|:-:|---|---|
-Altair Activate<sup>**</sup>|-|X|![Direct Communication](landingpage/DC.svg) ![Bus Simulation FMU](landingpage/BSF.svg) ![High-Cut](landingpage/HC.svg) ![Low-Cut: CAN](landingpage/LC_CAN.svg) [Low-Cut: FlexRay](landingpage/LC_FlexRay.svg)|[http://www.altair.de](https://www.altair.de/activate/)
-AVL FMU Sim<sup>**</sup>|-|X|![Direct Communication](landingpage/DC.svg) ![Bus Simulation FMU](landingpage/BSF.svg) CAN, FlexRay|[http://www.avl.de](https://www.avl.de/)
-dSPACE SystemDesk|X|-|![Exporter](landingpage/Exp.svg) CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/system_architecture_software/systemdesk.cfm)
-dSPACE VEOS<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)
-Synopsys Silver<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) CAN|[https://www.synopsys.com](https://www.synopsys.com/verification/virtual-prototyping/silver.html)
+Altair Activate<sup>**</sup>|-|X|![Direct Communication](landingpage/DC.svg) ![Bus Simulation FMU](landingpage/BSF.svg) ![High-Cut](landingpage/HC.svg) ![Low-Cut: CAN](landingpage/LC_CAN.svg) [Low-Cut: FlexRay](landingpage/LC_FR.svg)|[http://www.altair.de](https://www.altair.de/activate/)
+AVL FMU Sim<sup>**</sup>|-|X|![Direct Communication](landingpage/DC.svg) ![Bus Simulation FMU](landingpage/BSF.svg) ![High-Cut](landingpage/HC.svg) ![Low-Cut: CAN](landingpage/LC_CAN.svg) [Low-Cut: FlexRay](landingpage/LC_FR.svg)|[http://www.avl.de](https://www.avl.de/)
+dSPACE SystemDesk|X|-|![Low-Cut: CAN](landingpage/LC_CAN.svg) [Low-Cut: FlexRay](landingpage/LC_FR.svg)|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/system_architecture_software/systemdesk.cfm)
+dSPACE VEOS<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) ![Low-Cut: CAN](landingpage/LC_CAN.svg) [Low-Cut: FlexRay](landingpage/LC_FR.svg)|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)
+Synopsys Silver<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) ![Low-Cut: CAN](landingpage/LC_CAN.svg)|[https://www.synopsys.com](https://www.synopsys.com/verification/virtual-prototyping/silver.html)
 
 <sup><sup>*</sup> Implementation has prototype state and is not part of the release</sup>
 <sup><sup>**</sup> Own Bus Simulation FMU required</sup>
