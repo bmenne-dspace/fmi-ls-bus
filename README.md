@@ -56,13 +56,13 @@ It should be noted that the implementation in some tools is either in prototype 
 Feel free to contact the specified tool vendors if you are interested in using the fmi-ls-bus layered standard.
 Additionally, any FMU importer that supports the necessary FMI 3.0 features, such as clocks and binary variables, has generic fmi-ls-bus support and can be used.
 
-|Name|Supported Compositions|High-Cut|Low-Cut|Contact
-|---|---|:-:|---|---|
-Altair Activate<sup>**</sup>|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/BSF.svg)|X|CAN, FlexRay|[http://www.altair.de](https://www.altair.de/activate/)
-AVL FMU Sim<sup>**</sup>|![Direct Communication](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/DC.svg) ![Bus Simulation FMU](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/BSF.svg)|X|CAN, FlexRay|[http://www.avl.de](https://www.avl.de/)
-dSPACE SystemDesk|![Exporter](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/Exp.svg)|-|CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/system_architecture_software/systemdesk.cfm)
-dSPACE VEOS<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)
-Synopsys Silver<sup>*</sup>|![Integrated Bus Simulation](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/landingpage/IBS.svg)|-|CAN|[https://www.synopsys.com](https://www.synopsys.com/verification/virtual-prototyping/silver.html)
+|Name|Exporter|Importer|Features|Contact
+|---|:-:|:-:|---|---|
+Altair Activate<sup>**</sup>|-|X|![Direct Communication](landingpage/DC.svg) ![Bus Simulation FMU](landingpage/BSF.svg) CAN, FlexRay|[http://www.altair.de](https://www.altair.de/activate/)
+AVL FMU Sim<sup>**</sup>|-|X|![Direct Communication](landingpage/DC.svg) ![Bus Simulation FMU](landingpage/BSF.svg) CAN, FlexRay|[http://www.avl.de](https://www.avl.de/)
+dSPACE SystemDesk|X|-|![Exporter](landingpage/Exp.svg) CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/system_architecture_software/systemdesk.cfm)
+dSPACE VEOS<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) CAN, FlexRay|[https://www.dspace.com](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)
+Synopsys Silver<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) CAN|[https://www.synopsys.com](https://www.synopsys.com/verification/virtual-prototyping/silver.html)
 
 <sup><sup>*</sup> Implementation has prototype state and is not part of the release</sup>
 <sup><sup>**</sup> Own Bus Simulation FMU required</sup>
