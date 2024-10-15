@@ -65,9 +65,9 @@ dSPACE VEOS<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) ![
 Synopsys Silver<sup>*</sup>|-|X|![Integrated Bus Simulation](landingpage/IBS.svg) ![Low-Cut: CAN](landingpage/LC_CAN.svg)|[https://www.synopsys.com](https://www.synopsys.com/verification/virtual-prototyping/silver.html)
 
 <sup><sup>*</sup> Implementation has prototype state and is not part of the release</sup>
-<sup><sup>**</sup> Own Bus Simulation FMU required</sup>
+<sup><sup>**</sup> Own Bus Simulation FMU required (in case of BSF)</sup>
 
-![Legend of supported system compositions of tools](https://github.com/bmenne-dspace/fmi-ls-bus/blob/main/tool_legend.svg)
+![Legend of supported system compositions of tools](landingpage/tool_legend.svg)
 
 ## Copyright and License
 Code and documentation copyright (C) 2023-2024 The Modelica Association Project FMI.
