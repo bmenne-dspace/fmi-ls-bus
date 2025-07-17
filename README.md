@@ -91,7 +91,7 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
 
 _* New tools within the list can be added via PullRequest from every tool vendor._
 
-<table border=0>
+<table border="0">
   <tr>
     <td valign=top>
       <table>
