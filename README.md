@@ -89,6 +89,8 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
 [Vector SIL Kit FMU Importer](https://github.com/vectorgrp/sil-kit-fmu-importer)|Importer|![Integrated Bus Simulation](landingpage/IBS.svg) <br> ![Low-Cut: CAN](landingpage/LC_CAN.svg)|Open-source software. <br>Available since version 1.5
 [Vector vVIRTUALtarget](https://www.vector.com/at/en/products/products-a-z/software/vvirtualtarget/)|Exporter|![Low-Cut: CAN](landingpage/LC_CAN.svg)|Available since version 9
 
+_* New tools within the list can be added via PullRequest from every tool vendor._
+
 <table>
   <tr>
     <th colspan="2">Supported system compositions</td>
@@ -96,8 +98,14 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
   <tr>
     <td><img src="landingpage/DC.svg"/></td>
     <td>Direct communication</td>
-    <td><img src="landingpage/HC.svg"/></td>
-    <td>High-Cut</td>
+  </tr>
+  <tr>
+    <td><img src="landingpage/BSF.svg"/></td>
+    <td>Composition with dedicated bus simulation FMU</td>
+  </tr>
+  <tr>
+    <td><img src="landingpage/IBS.svg"/></td>
+    <td>Importer with integrated bus simulation</td>
   </tr>
 </table>
 
@@ -106,20 +114,22 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
     <th colspan="2">Supported bus types</td>
   </tr>
   <tr>
-    <td><img src="landingpage/BSF.svg"/></td>
-    <td>Composition with dedicated bus simulation FMU</td>
+    <td><img src="landingpage/HC.svg"/></td>
+    <td>High-Cut</td>
+  </tr>
+  <tr>
     <td><img src="landingpage/LC_CAN.svg"/></td>
     <td>Low-Cut CAN</td>
   </tr>
   <tr>
-    <td><img src="landingpage/IBS.svg"/></td>
-    <td>Importer with integrated bus simulation</td>
     <td><img src="landingpage/LC_FR.svg"/></td>
     <td>Low-Cut FlexRay</td>
   </tr>
+  <tr>
+    <td><img src="landingpage/LC_Ethernet.svg"/></td>
+    <td>Low-Cut Ethernet</td>
+  </tr>
 </table>
-
-_* New tools within the list can be added via PullRequest from every tool vendor._
 
 ## Copyright and License
 
