@@ -93,43 +93,59 @@ _* New tools within the list can be added via PullRequest from every tool vendor
 
 <table>
   <tr>
-    <th colspan="2">Supported system compositions</td>
-  </tr>
-  <tr>
-    <td><img src="landingpage/DC.svg"/></td>
-    <td>Direct communication</td>
-  </tr>
-  <tr>
-    <td><img src="landingpage/BSF.svg"/></td>
-    <td>Composition with dedicated bus simulation FMU</td>
-  </tr>
-  <tr>
-    <td><img src="landingpage/IBS.svg"/></td>
-    <td>Importer with integrated bus simulation</td>
-  </tr>
+    <td valign=top>
+      <table>
+        <tr>
+          <th colspan="2">Supported system compositions</td>
+        </tr>
+        <tr>
+          <td><img src="landingpage/DC.svg"/></td>
+          <td>Direct communication</td>
+        </tr>
+        <tr>
+          <td><img src="landingpage/BSF.svg"/></td>
+          <td>Composition with dedicated bus simulation FMU</td>
+        </tr>
+        <tr>
+          <td><img src="landingpage/IBS.svg"/></td>
+          <td>Importer with integrated bus simulation</td>
+        </tr>
+      </table>
+    </td>
+    <td valign=top>
+      <table>
+        <tr>
+          <th colspan="2">Supported bus types</td>
+        </tr>
+        <tr>
+          <td><img src="landingpage/HC.svg"/></td>
+          <td>High-Cut</td>
+        </tr>
+        <tr>
+          <td><img src="landingpage/LC_CAN.svg"/></td>
+          <td>Low-Cut CAN</td>
+        </tr>
+        <tr>
+          <td><img src="landingpage/LC_FR.svg"/></td>
+          <td>Low-Cut FlexRay</td>
+        </tr>
+        <tr>
+          <td><img src="landingpage/LC_Ethernet.svg"/></td>
+          <td>Low-Cut Ethernet</td>
+        </tr>
+      </table>
+    </tr>
+  </td>
 </table>
 
-<table>
-  <tr>
-    <th colspan="2">Supported bus types</td>
-  </tr>
-  <tr>
-    <td><img src="landingpage/HC.svg"/></td>
-    <td>High-Cut</td>
-  </tr>
-  <tr>
-    <td><img src="landingpage/LC_CAN.svg"/></td>
-    <td>Low-Cut CAN</td>
-  </tr>
-  <tr>
-    <td><img src="landingpage/LC_FR.svg"/></td>
-    <td>Low-Cut FlexRay</td>
-  </tr>
-  <tr>
-    <td><img src="landingpage/LC_Ethernet.svg"/></td>
-    <td>Low-Cut Ethernet</td>
-  </tr>
-</table>
+
+
+
+
+
+
+
+
 
 ## Copyright and License
 
