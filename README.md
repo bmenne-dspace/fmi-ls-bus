@@ -89,9 +89,10 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
 [Vector SIL Kit FMU Importer](https://github.com/vectorgrp/sil-kit-fmu-importer)|Importer|![Integrated Bus Simulation](landingpage/IBS.svg) <br> ![Low-Cut: CAN](landingpage/LC_CAN.svg)|Open-source software. <br>Available since version 1.5
 [Vector vVIRTUALtarget](https://www.vector.com/at/en/products/products-a-z/software/vvirtualtarget/)|Exporter|![Low-Cut: CAN](landingpage/LC_CAN.svg)|Available since version 9
 
-_* New tools within the list can be added via PullRequest from every tool vendor._
-
-<table style="border-collapse: collapse;">
+<table>
+  <tr>
+    <th colspan="2">Legend</td>
+  </tr>
   <tr>
     <td valign=top>
       <table>
@@ -138,14 +139,7 @@ _* New tools within the list can be added via PullRequest from every tool vendor
   </td>
 </table>
 
-
-
-
-
-
-
-
-
+_* New tools within the list can be added via PullRequest from every tool vendor._
 
 ## Copyright and License
 
