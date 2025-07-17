@@ -92,13 +92,18 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
 <table>
   <tr>
     <th colspan="2">Supported system compositions</td>
-    <th colspan="2">Supported bus types</td>
   </tr>
   <tr>
     <td><img src="landingpage/DC.svg"/></td>
     <td>Direct communication</td>
     <td><img src="landingpage/HC.svg"/></td>
     <td>High-Cut</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Supported bus types</td>
   </tr>
   <tr>
     <td><img src="landingpage/BSF.svg"/></td>
