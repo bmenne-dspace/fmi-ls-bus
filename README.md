@@ -92,8 +92,8 @@ Additionally, any FMU importer that supports the necessary FMI 3.0 features, suc
 _* New tools within the list can be added via PullRequest from every tool vendor._
 
 <table border="0">
-  <tr>
-    <td valign=top>
+  <tr border="0">
+    <td valign=top border="0">
       <table>
         <tr>
           <th colspan="2">Supported system compositions</td>
@@ -112,7 +112,7 @@ _* New tools within the list can be added via PullRequest from every tool vendor
         </tr>
       </table>
     </td>
-    <td valign=top>
+    <td valign=top border="0">
       <table>
         <tr>
           <th colspan="2">Supported bus types</td>
