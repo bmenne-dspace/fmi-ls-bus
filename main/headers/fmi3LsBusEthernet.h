@@ -1,6 +1,43 @@
 #ifndef fmi3LsBusEthernet_h
 #define fmi3LsBusEthernet_h
 
+/*
+This header file contains utility macros to read and write FMI-LS-BUS
+Ethernet specific bus operations from\to dedicated buffer variables.
+
+This header file can be used when creating Network FMI-LS-BUS FMUs with Ethernet.
+
+Copyright (C) 2024-2025 Modelica Association Project "FMI"
+              All rights reserved.
+
+This file is licensed by the copyright holders under the 2-Clause BSD License
+(https://opensource.org/licenses/BSD-2-Clause):
+
+----------------------------------------------------------------------------
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+----------------------------------------------------------------------------
+*/
+
 #include "fmi3LsBus.h"
 #include "fmi3PlatformTypes.h"
 
@@ -75,7 +112,7 @@ typedef fmi3UInt8 fmi3LsBusEthernetMacAddressOctet;
 /**
  * \brief Data type representing the EtherType or frame length.
  */
-typedef fmi3UInt16 fmi3LsBusEthernetEtherTypeOrLength;
+typedef fmi3UInt16 fmi3LsBusEthernetTypeOrLength;
 
 /**
  * \brief Data type representing the Ethernet frame payload data.
@@ -85,7 +122,7 @@ typedef fmi3UInt8 fmi3LsBusEthernetData;
 /**
  * \brief Data type representing the Ethernet frame payload length.
  */
-typedef fmi3UInt8 fmi3LsBusEthernetDataLength;
+typedef fmi3UInt32 fmi3LsBusEthernetDataLength;
 
 /**
  * \brief Data type representing a CRC checksum.
@@ -149,9 +186,9 @@ typedef fmi3UInt8 fmi3LsBusEthernetMdiMode;
  */
 typedef struct
 {
-    fmi3LsBusEthernetMdiMode mdiMode;  /**< The configuration of the node's media-dependent interface */
-    fmi3LsBusEthernetDataLength numberOfSupportedPhyTypes;  /**< The number of characters in the list of supported PHY types */
-    fmi3LsBusEthernetPhyTypeCharacter supportedPhyTypes;  /**< An array of zero-terminated strings describing PHY types supported by this Ethernet node  The first element in this list indicates the type of PHY used by this node  The list must have at least one element  Elements describing a PHY standardized by 8023 or an amendment must use the value described in the chapter "303212 aPhyType" of the standard  Otherwise, a vendor-defined value may be used */
+    fmi3LsBusEthernetMdiMode mdiMode;                          /**< The configuration of the node's media-dependent interface */
+    fmi3LsBusEthernetPhyTypeLength supportedPhyTypesLength;    /**< The length of supported PHY types list */
+    fmi3LsBusEthernetPhyTypeCharacter supportedPhyTypes[];     /**< An array of zero-terminated strings describing PHY types supported by this Ethernet node  The first element in this list indicates the type of PHY used by this node  The list must have at least one element  Elements describing a PHY standardized by 802.3 or an amendment must use the value described in the chapter "303212 aPhyType" of the standard  Otherwise, a vendor-defined value may be used */
 } fmi3LsBusEthernetConfigurationSupportedPhyTypes;
 
 /**
@@ -191,7 +228,7 @@ typedef struct
     fmi3LsBusBoolean lastFragment;                            /**< Indicates whether this is the last fragment of a fragmented Ethernet frame  Must be set to `TRUE` if this is a full Ethernet frame */
     fmi3LsBusEthernetMacAddressOctet destinationAddress[6];   /**< The destination address of the frame  Only applicable if this is a full Ethernet frame or the first fragment of an Ethernet frame */
     fmi3LsBusEthernetMacAddressOctet sourceAddress[6];        /**< The destination address of the frame  Only applicable if this is a full Ethernet frame or the first fragment of an Ethernet frame */
-    fmi3LsBusEthernetEtherTypeOrLength etherTypeOrLength;     /**< Indicates the type of Ethernet frame (Ethernet II) or frame length (8023) */
+    fmi3LsBusEthernetTypeOrLength typeOrLength;               /**< Indicates the type of Ethernet frame (Ethernet II), the TPID (802.1Q) or frame length (802.3) */
     fmi3LsBusEthernetDataLength dataLength;                   /**< The length of the data of this Ethernet frame or mPacket  Note that this does not correspond to a field in the Ethernet frame */
     fmi3LsBusEthernetData data[];                             /**< The payload data of the Ethernet frame or mPacket */
 } fmi3LsBusEthernetOperationTransmit;
