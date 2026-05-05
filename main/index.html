@@ -478,8 +478,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>FMI Layered Standard for Network Communication (FMI-LS-BUS)</h1>
 <div class="details">
-<span id="revnumber">version 68d5efc,</span>
-<span id="revdate">2026-02-13</span>
+<span id="revnumber">version 4524a5a,</span>
+<span id="revdate">2026-05-05</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Contents</div>
@@ -3570,7 +3570,7 @@ If a Network FMU does not support wake up, this operation can be ignored on the 
 <h6 id="low-cut-can-bus-notification-parameter">5.5.1.3.1. Bus Notification Parameter</h6>
 <div class="paragraph">
 <p>For a detailed simulation, the CAN bus behavior regarding acknowledgment, bus errors and arbitration losses must be considered.
-A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-can-confirm-operation"><code>Confirm-</code></a>, <a href="#low-cut-can-bus-error-operation"><code>Bus Error-</code></a> and <a href="#low-cut-can-arbitration-lost-operation"><code>Arbitration Lost</code></a> operations to the Network FMUs.</p>
+A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-can-confirm-operation"><code>Confirm</code></a>, <a href="#low-cut-can-bus-error-operation"><code>Bus Error</code></a> and <a href="#low-cut-can-arbitration-lost-operation"><code>Arbitration Lost</code></a> operations to the Network FMUs.</p>
 </div>
 <div class="paragraph">
 <p>However, in scenarios where Network FMUs are connected directly to each other, or where the Bus Simulation does not simulate such effects, it must be possible to configure the Network FMU such that it does not wait for any response after a <a href="#low-cut-can-transmit-operation"><code>Transmit</code></a> operation.
@@ -3585,13 +3585,13 @@ The default value of this parameter shall be <code>false</code>.<br></p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-can-confirm-operation"><code>Confirm-</code></a>, <a href="#low-cut-can-bus-error-operation"><code>Bus Error-</code></a> or <a href="#low-cut-can-arbitration-lost-operation"><code>Arbitration Lost</code></a> operations are not used.
+The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-can-confirm-operation"><code>Confirm</code></a>, <a href="#low-cut-can-bus-error-operation"><code>Bus Error</code></a> or <a href="#low-cut-can-arbitration-lost-operation"><code>Arbitration Lost</code></a> operations are not used.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-can-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-can-confirm-operation"><code>Confirm-</code></a>, <a href="#low-cut-can-bus-error-operation"><code>Bus Error-</code></a> and <a href="#low-cut-can-arbitration-lost-operation"><code>Arbitration Lost</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
+<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-can-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-can-confirm-operation"><code>Confirm</code></a>, <a href="#low-cut-can-bus-error-operation"><code>Bus Error</code></a> and <a href="#low-cut-can-arbitration-lost-operation"><code>Arbitration Lost</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
 Even if the Network FMU does not expect bus notifications, i.e. <a href="#low-cut-can-bus-notification-parameter"><code>BusNotifications</code></a> variable was not set to <code>fmi3True</code>, but receives them, it shall ignore them, i.e. it shall not report warnings or errors.</p>
 </div>
 <div class="admonitionblock note">
@@ -4470,7 +4470,7 @@ If a Network FMU does not support wake-up this operation can be ignored on consu
 <h6 id="low-cut-lin-bus-notification-parameter">5.5.2.3.1. Bus Notification Parameter</h6>
 <div class="paragraph">
 <p>For a detailed simulation, a Network FMU needs information about whether the message sent has arrived or whether a bus error has occurred.
-A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-lin-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operations to the Network FMUs.</p>
+A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-lin-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operations to the Network FMUs.</p>
 </div>
 <div class="paragraph">
 <p>However, in scenarios where Network FMUs are connected directly to each other, or where the Bus Simulation does not simulate such effects, it must be possible to configure the Network FMU such that it does not wait for any response after a <a href="#low-cut-lin-transmit-operation"><code>Transmit</code></a> operation.
@@ -4485,13 +4485,13 @@ The default value of this parameter shall be <code>false</code>.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-lin-confirm-operation"><code>Confirm-</code></a> or <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operations are not used.
+The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-lin-confirm-operation"><code>Confirm</code></a> or <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operations are not used.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-lin-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-lin-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
+<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-lin-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-lin-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
 Even if the Network FMU does not expect bus notifications, i.e. <a href="#low-cut-lin-bus-notification-parameter"><code>BusNotifications</code></a> variable was not set to <code>fmi3True</code>, but receives them, it shall ignore them, i.e. it shall not report warnings or errors.</p>
 </div>
 <div class="admonitionblock note">
@@ -4544,7 +4544,7 @@ The <a href="#low-cut-lin-transmit-operation"><code>Transmit</code></a> operatio
 Within the <a href="#low-cut-lin-transmit-operation"><code>Transmit</code></a> operation, the different frame parts are qualified via the <code>Frame Part</code> argument.</p>
 </div>
 <div class="paragraph">
-<p>A <a href="#low-cut-lin-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operation represents feedback from a Bus Simulation for a previously carried out <a href="#low-cut-lin-transmit-operation"><code>Transmit</code></a> operation.
+<p>A <a href="#low-cut-lin-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operation represents feedback from a Bus Simulation for a previously carried out <a href="#low-cut-lin-transmit-operation"><code>Transmit</code></a> operation.
 Depending on the <a href="#low-cut-lin-bus-notification-parameter"><code>BusNotifications</code></a> parameter, for a Network FMU a successful transmission of a <a href="#low-cut-lin-transmit-operation"><code>Transmit</code></a> operation results in a <a href="#low-cut-lin-confirm-operation"><code>Confirm</code></a> operation, an unsuccessful <a href="#low-cut-lin-transmit-operation"><code>Transmit</code></a> operation in a <a href="#low-cut-lin-bus-error-operation"><code>Bus Error</code></a> operation.
 If <a href="#low-cut-lin-bus-notification-parameter"><code>BusNotifications</code></a> is <code>false</code> (default), then Network FMUs must not rely on receiving <a href="#low-cut-lin-confirm-operation"><code>Confirm</code></a> operations.
 If a specified Network FMU is depending on <a href="#low-cut-lin-confirm-operation"><code>Confirm</code></a> operations and <a href="#low-cut-lin-bus-notification-parameter"><code>BusNotifications</code></a> is <code>false</code>, the self confirmation shall be realized internally within the respective Network FMU.</p>
@@ -5242,7 +5242,7 @@ This type of <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TX_CONFLICT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0x16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0x10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Indicates that a reception from another Network FMU is already ongoing while the specified Network FMU starts a transmission via a <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation.
 This type of <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> is possible for <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> producing Network FMUs only.</p></td>
 </tr>
@@ -5680,7 +5680,7 @@ If a Network FMU does not support a specified <code>Type</code> of a <a href="#l
 <h6 id="low-cut-flexray-bus-notification-parameter">5.5.3.4.1. Bus Notification Parameter</h6>
 <div class="paragraph">
 <p>For a detailed simulation, a Network FMU needs information about whether the message sent has arrived or whether a bus error has occurred.
-A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-flexray-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations to the Network FMUs.</p>
+A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations to the Network FMUs.</p>
 </div>
 <div class="paragraph">
 <p>However, in scenarios where Network FMUs are connected directly to each other, or where the Bus Simulation does not simulate such effects, it must be possible to configure the Network FMU such that it does not wait for any response after a <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation.
@@ -5695,13 +5695,13 @@ The default value of this parameter shall be <code>false</code>.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-flexray-confirm-operation"><code>Confirm-</code></a> or <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations are not used.
+The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> or <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations are not used.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-flexray-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-flexray-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
+<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-flexray-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
 Even if the Network FMU does not expect bus notifications, i.e. <a href="#low-cut-flexray-bus-notification-parameter"><code>BusNotifications</code></a> variable was not set to <code>fmi3True</code>, but receives them, it shall ignore them, i.e. it shall not report warnings or errors.</p>
 </div>
 <div class="admonitionblock note">
@@ -5749,7 +5749,7 @@ Under the condition that participating Network FMUs also provide their <a href="
 </div>
 <div class="paragraph">
 <p>Therefore, a parameter with <code>memberName = "DeliveryOnBoundary"</code> can be added within the FlexRay-specific <a href="#low-cut-configuration-terminal">Configuration Terminal</a> to switch the behavior in the Bus Simulation.
-If the value of the parameter is set to <code>fmi3True</code>, the Bus Simulation provides <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operations and also resulting <a href="#low-cut-flexray-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations at a concrete slot boundary.
+If the value of the parameter is set to <code>fmi3True</code>, the Bus Simulation provides <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operations and also resulting <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations at a concrete slot boundary.
 If the value of the parameter is set to <code>fmi3False</code>, the Bus Simulation provides the respective operations after the calculated transfer time.
 See <a href="#low-cut-flexray-static-segment">Section 5.5.3.8.1</a> and <a href="#low-cut-flexray-dynamic-segment">Section 5.5.3.8.2</a> for details.
 The default value shall be <code>true</code>.
@@ -5864,7 +5864,7 @@ After this temporal aspects for data transmission are explained.</p>
 It contains all relevant frame data and is provided by a Network FMU in the role of a sender, potentially via a Bus Simulation, to one or more Network FMUs in the role of a receiver.</p>
 </div>
 <div class="paragraph">
-<p>A <a href="#low-cut-flexray-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operation represents feedback from a Bus Simulation for a previously carried out <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation.
+<p>A <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operation represents feedback from a Bus Simulation for a previously carried out <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation.
 Depending on the <a href="#low-cut-flexray-bus-notification-parameter"><code>BusNotifications</code></a> parameter, for a Network FMU a successful transmission of a <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation results in a <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> operation, an unsuccessful <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation in a <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operation.
 If <a href="#low-cut-flexray-bus-notification-parameter"><code>BusNotifications</code></a> is <code>false</code> (default), then Network FMUs must not rely on receiving <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> operations.
 If a specified Network FMU is depending on <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> operations and <a href="#low-cut-flexray-bus-notification-parameter"><code>BusNotifications</code></a> is <code>false</code>, the self confirmation shall be realized internally within the respective Network FMU.</p>
@@ -5938,7 +5938,7 @@ The start time of the first FlexRay cycle is defined by the <code>Start Time</co
 </div>
 </div>
 <div class="paragraph">
-<p>, where:</p>
+<p>where:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -5976,7 +5976,7 @@ The start time of the first FlexRay cycle is defined by the <code>Start Time</co
 </div>
 </div>
 <div class="paragraph">
-<p>, where:</p>
+<p>where:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -5990,7 +5990,7 @@ The start time of the first FlexRay cycle is defined by the <code>Start Time</co
 <div class="paragraph">
 <p>For a static segment, a Network FMU shall provide the respective <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation in an interval starting at the beginning of a slot and ending at the action point (see <code>ActionPoint Offset</code> argument within the <a href="#low-cut-flexray-configuration-operation"><code>Configuration</code></a> operation) of a slot.
 Within this time window, the Network FMU must provide the respective <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operation for a specific slot.
-The point in time at which a Bus Simulation shall provide <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operations and also resulting <a href="#low-cut-flexray-confirm-operation"><code>Confirm-</code></a> or <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations depends on the <a href="#low-cut-flexray-delivery-on-boundary-parameter"><code>DeliveryOnBoundary</code></a> configuration parameter.
+The point in time at which a Bus Simulation shall provide <a href="#low-cut-flexray-transmit-operation"><code>Transmit</code></a> operations and also resulting <a href="#low-cut-flexray-confirm-operation"><code>Confirm</code></a> or <a href="#low-cut-flexray-bus-error-operation"><code>Bus Error</code></a> operations depends on the <a href="#low-cut-flexray-delivery-on-boundary-parameter"><code>DeliveryOnBoundary</code></a> configuration parameter.
 If the parameter is set to <code>fmi3False</code>, the Bus Simulation provides the respective operations directly after the calculated transmission time (see orange arrow in <a href="#figure-flexray-static-segment-bus-communication-points">Figure 28</a>).
 If the parameter is <code>true</code> (default), the corresponding operations are only provided at the slot boundary (green arrow in <a href="#figure-flexray-static-segment-bus-communication-points">Figure 28</a>).</p>
 </div>
@@ -6011,7 +6011,7 @@ If the parameter is <code>true</code> (default), the corresponding operations ar
 </div>
 </div>
 <div class="paragraph">
-<p>, where:</p>
+<p>where:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6038,7 +6038,7 @@ If the parameter is <code>true</code> (default), the corresponding operations ar
 </div>
 </div>
 <div class="paragraph">
-<p>, where:</p>
+<p>where:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6113,7 +6113,7 @@ This transmission will take three minislots.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>, where:</p>
+<p>where:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6140,7 +6140,7 @@ This transmission will take three minislots.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>, where:</p>
+<p>where:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6185,7 +6185,7 @@ It should be noted that \(T_{\mathrm{Start}}\) is already taken into account in 
 </div>
 </div>
 <div class="paragraph">
-<p>, where:</p>
+<p>where:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6930,7 +6930,7 @@ This chapter specifies the configuration parameters that should exist on an Ethe
 <h6 id="low-cut-ethernet-bus-notification-parameter">5.5.4.5.1. Bus Notification Parameter</h6>
 <div class="paragraph">
 <p>For a detailed simulation, a Network FMU needs information about whether a frame has been sent or whether a bus error has occurred.
-A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-ethernet-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-ethernet-bus-error-operation"><code>Bus Error</code></a> operations to the Network FMUs.</p>
+A Bus Simulation can simulate these effects by sending bus notifications in terms of <a href="#low-cut-ethernet-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-ethernet-bus-error-operation"><code>Bus Error</code></a> operations to the Network FMUs.</p>
 </div>
 <div class="paragraph">
 <p>However, in scenarios where Network FMUs are connected directly to each other, or where the Bus Simulation does not simulate such effects, it must be possible to configure the Network FMU such that it does not wait for any response after a <a href="#low-cut-ethernet-transmit-operation"><code>Transmit</code></a> operation.
@@ -6945,13 +6945,13 @@ The default value of this parameter shall be <code>false</code>.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-ethernet-confirm-operation"><code>Confirm-</code></a> or <a href="#low-cut-ethernet-bus-error-operation"><code>Bus Error</code></a> operations are not used.
+The default value <code>false</code> allows a simple integration of Network FMUs to simulation scenarios where <a href="#low-cut-ethernet-confirm-operation"><code>Confirm</code></a> or <a href="#low-cut-ethernet-bus-error-operation"><code>Bus Error</code></a> operations are not used.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-ethernet-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-ethernet-confirm-operation"><code>Confirm-</code></a> and <a href="#low-cut-ethernet-bus-error-operation"><code>Bus Error</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
+<p>Only Network FMUs with the corresponding optionally exposed <a href="#low-cut-ethernet-bus-notification-parameter"><code>BusNotifications</code></a> parameter set to <code>fmi3True</code> might wait for <a href="#low-cut-ethernet-confirm-operation"><code>Confirm</code></a> and <a href="#low-cut-ethernet-bus-error-operation"><code>Bus Error</code></a> operations and respond accordingly; otherwise Network FMUs must not wait ("fire-and-forget").
 Even if the Network FMU does not expect bus notifications, i.e. <a href="#low-cut-ethernet-bus-notification-parameter"><code>BusNotifications</code></a> variable was not set to <code>fmi3True</code>, but receives them, it shall ignore them, i.e. it shall not report warnings or errors.</p>
 </div>
 <div id="figure-fmu-ethernet-bus-notifications-parameter" class="listingblock">
