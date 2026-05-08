@@ -159,7 +159,7 @@ The FMI Cross-Check is an official Modelica Association initiative that ensures 
 
 The following is an incomplete list of Cross-Check models on which FMI-LS-BUS models from various vendor are published. Please feel free to test the provided models and contact the model providing vendor if you have any questions:
 
-- [FMUs exported by SystemDesk](https://www.dspace.com/de/gmb/home/support/supvers/supverscompm/fmicompatibility/fmi-cross-check-systemdesk.cfm)
+- [FMUs exported by dSPACE SystemDesk](https://www.dspace.com/de/gmb/home/support/supvers/supverscompm/fmicompatibility/fmi-cross-check-systemdesk.cfm)
 
 ## Copyright and License
 
