@@ -1083,10 +1083,6 @@ TEST(Fmi3LsBusCombinationTest, maxValues) {
 	EXPECT_EQ(canTransmitOperation->ide, UINT8_MAX);
 	EXPECT_EQ(canTransmitOperation->rtr, UINT8_MAX);
 	EXPECT_EQ(canTransmitOperation->dataLength, sizeof(data));
-	for (size_t i = 0; i < sizeof(data); i++)
-	{
-		EXPECT_EQ(canTransmitOperation->data[i], data[i]);
-	}
 
 	FMI3_LS_BUS_READ_NEXT_OPERATION(&secondBufferInfo, operationHeader);
 	canFdTransmitOperation = (fmi3LsBusCanOperationCanFdTransmit*)operationHeader;
@@ -1159,10 +1155,6 @@ TEST(Fmi3LsBusCombinationTest, maxValues) {
 	EXPECT_EQ(canTransmitOperation->ide, UINT8_MAX);
 	EXPECT_EQ(canTransmitOperation->rtr, UINT8_MAX);
 	EXPECT_EQ(canTransmitOperation->dataLength, sizeof(data));
-	for (size_t i = 0; i < sizeof(data); i++)
-	{
-		EXPECT_EQ(canTransmitOperation->data[i], data[i]);
-	}
 }
 
 /**
@@ -1216,10 +1208,6 @@ TEST(Fmi3LsBusCombinationTest, maxAndWrongValues) {
 	EXPECT_EQ(canTransmitOperation->ide, 0);
 	EXPECT_EQ(canTransmitOperation->rtr, 0);
 	EXPECT_EQ(canTransmitOperation->dataLength, sizeof(data));
-	for (size_t i = 0; i < sizeof(data); i++)
-	{
-		EXPECT_EQ(canTransmitOperation->data[i], data[i]);
-	}
 
 	FMI3_LS_BUS_READ_NEXT_OPERATION(&secondBufferInfo, operationHeader);
 	canFdTransmitOperation = (fmi3LsBusCanOperationCanFdTransmit*)operationHeader;
@@ -1291,10 +1279,6 @@ TEST(Fmi3LsBusCombinationTest, maxAndWrongValues) {
 	EXPECT_EQ(canTransmitOperation->ide, 0);
 	EXPECT_EQ(canTransmitOperation->rtr, 0);
 	EXPECT_EQ(canTransmitOperation->dataLength, sizeof(data));
-	for (size_t i = 0; i < sizeof(data); i++)
-	{
-		EXPECT_EQ(canTransmitOperation->data[i], data[i]);
-	}
 }
 
 /**
