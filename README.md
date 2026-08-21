@@ -159,7 +159,7 @@ The [FMI-LS-BUS Wireshark PlugIn] extends Wireshark with native support for the 
 
 The plugin automatically analyzes FMI-LS-BUS logs and decodes operations into a clear and structured representation. Instead of manually interpreting raw data or hexadecimal values, users are provided with a human-readable view of message contents, arguments, and status information.
 
-Please note that this only refers to the Wireshark plugin itself. The importer (e.g. [dSPACE VEOS](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)) must first be able to create a `.pcapng` file, which can then be read by Wireshark.
+Please note that this only refers to the Wireshark plugin itself. Either the FMU or the importer (e.g. [dSPACE VEOS](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)) must be able to log the FMI-LS-BUS operations according to the Wireshark format in a `.pcapng` file.
 
 ## Cross-Check Models
 
