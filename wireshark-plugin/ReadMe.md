@@ -71,7 +71,7 @@ or
 
 ### 2. Copy the Lua Script
 
-Copy `fmi_ls_bus.lua` script into the personal plugin directory.
+Copy [`fmi_ls_bus.lua`](fmi_ls_bus.lua) script into the personal plugin directory.
 
 Example:
 
