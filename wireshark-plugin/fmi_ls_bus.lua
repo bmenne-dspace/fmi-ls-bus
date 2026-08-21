@@ -1,4 +1,13 @@
 --[[
+Acknowledgement
+
+dSPACE SE & Co. KG generously provides this script to the FMI-LS-BUS community. 
+We would like to thank dSPACE for supporting the adoption of the FMI-LS-BUS standard 
+and for contributing tools that help developers, integrators, and users work more 
+effectively with FMI-LS-BUS-based systems.
+]]
+
+--[[
 This header file declares bus-independent constants and data types as defined by the
 FMI-LS-BUS layered standard specification (https://github.com/modelica/fmi-ls-bus).
 
@@ -33,15 +42,6 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ----------------------------------------------------------------------------
-]]
-
---[[
-Acknowledgement
-
-dSPACE SE & Co. KG generously provides this script to the FMI-LS-BUS community. 
-We would like to thank dSPACE for supporting the adoption of the FMI-LS-BUS standard 
-and for contributing tools that help developers, integrators, and users work more 
-effectively with FMI-LS-BUS-based systems.
 ]]
 
 local fmi_ls_bus = Proto("fmi_ls_bus", "FMI LS BUS")
