@@ -161,6 +161,12 @@ The following is an incomplete list of Cross-Check models on which FMI-LS-BUS mo
 
 - [FMUs exported by dSPACE SystemDesk](https://www.dspace.com/de/gmb/home/support/supvers/supverscompm/fmicompatibility/fmi-cross-check-systemdesk.cfm) (see also [FMI Compatibility of all dSPACE products](https://www.dspace.com/de/gmb/home/support/supvers/supverscompm/fmicompatibility.cfm))
 
+## Wireshark PlugIn
+
+The FMI-LS-BUS Wireshark PlugIn extends Wireshark with native support for the FMI-LS-BUS protocol, enabling users to efficiently analyze and troubleshoot FMI-LS-BUS communication within captured network traffic.
+
+The plugin automatically detects FMI-LS-BUS messages and decodes all protocol operations into a clear and structured representation. Instead of manually interpreting raw data or hexadecimal values, users are provided with a human-readable view of message contents, parameters, and status information.
+
 ## Copyright and License
 
 Code and documentation copyright (C) 2023-2026 The Modelica Association Project FMI.
@@ -175,6 +181,7 @@ The [FMI-LS-XCP] specifies an FMI extension for using the XCP protocol and A2L v
 [FMI]: https://fmi-standard.org/
 [FMI-LS-XCP]: https://github.com/modelica/fmi-ls-xcp
 [Demo FMUs]: https://github.com/modelica/fmi-ls-bus-examples/tree/main/
+[FMI-LS-BUS Wireshark PlugIn]: https://github.com/bmenne-dspace/fmi-ls-bus/tree/main/wireshark-plugin
 [2-Clause BSD License]: https://opensource.org/licenses/BSD-2-Clause
 [Attribution-ShareAlike 4.0 International]: https://creativecommons.org/licenses/by-sa/4.0/
 [githubspec]: docs/index.adoc
