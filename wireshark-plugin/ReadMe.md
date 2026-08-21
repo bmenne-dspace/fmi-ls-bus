@@ -13,7 +13,7 @@ Key features include:
 - Meaningful interpretation and presentation of protocol fields and values
 - Full compatibility with Wireshark’s search, filtering, and export capabilities
 
-![FMI-LS-BUS PlugIn](wireshark.svg)
+![FMI-LS-BUS PlugIn](wireshark.png)
 
 By integrating seamlessly into Wireshark, the FMI-LS-BUS plugin enables the user to analyze the message flow between models efficiently, identify issues more quickly, and gain deeper insight into protocol behavior. The plugin leverages the familiar Wireshark user interface and integrates naturally into existing analysis and debugging workflows.
 
