@@ -4,6 +4,8 @@ The FMI-LS-BUS plugin extends Wireshark with native support for the FMI-LS-BUS p
 
 The plugin automatically analyzes FMI-LS-BUS logs and decodes operations into a clear and structured representation. Instead of manually interpreting raw data or hexadecimal values, users are provided with a human-readable view of message contents, arguments, and status information.
 
+![FMI-LS-BUS PlugIn](wireshark.png)
+
 Key features include:
 
 - Decoding of all FMI-LS-BUS operations
@@ -12,8 +14,6 @@ Key features include:
 - Support for display filters to analyze specific operations or communication partners
 - Meaningful interpretation and presentation of protocol fields and values
 - Full compatibility with Wireshark’s search, filtering, and export capabilities
-
-![FMI-LS-BUS PlugIn](wireshark.png)
 
 By integrating seamlessly into Wireshark, the FMI-LS-BUS plugin enables the user to analyze the message flow between models efficiently, identify issues more quickly, and gain deeper insight into protocol behavior. The plugin leverages the familiar Wireshark user interface and integrates naturally into existing analysis and debugging workflows.
 
