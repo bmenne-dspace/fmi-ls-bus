@@ -163,7 +163,7 @@ The following is an incomplete list of Cross-Check models on which FMI-LS-BUS mo
 
 ## Wireshark PlugIn
 
-The FMI-LS-BUS Wireshark PlugIn extends Wireshark with native support for the FMI-LS-BUS protocol, enabling users to efficiently analyze and troubleshoot FMI-LS-BUS communication within captured network traffic.
+The [FMI-LS-BUS Wireshark PlugIn] extends Wireshark with native support for the FMI-LS-BUS protocol, enabling users to efficiently analyze and troubleshoot FMI-LS-BUS communication within captured network traffic.
 
 The plugin automatically detects FMI-LS-BUS messages and decodes all protocol operations into a clear and structured representation. Instead of manually interpreting raw data or hexadecimal values, users are provided with a human-readable view of message contents, parameters, and status information.
 
