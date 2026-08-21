@@ -38,7 +38,10 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --[[
 Acknowledgement
 
-dSPACE SE & Co. KG generously provides this script to the FMI-LS-BUS community. We would like to thank dSPACE for supporting the adoption of the FMI-LS-BUS standard and for contributing tools that help developers, integrators, and users work more effectively with FMI-LS-BUS-based systems.
+dSPACE SE & Co. KG generously provides this script to the FMI-LS-BUS community. 
+We would like to thank dSPACE for supporting the adoption of the FMI-LS-BUS standard 
+and for contributing tools that help developers, integrators, and users work more 
+effectively with FMI-LS-BUS-based systems.
 ]]
 
 local fmi_ls_bus = Proto("fmi_ls_bus", "FMI LS BUS")
