@@ -24,7 +24,7 @@ This section describes how the provided plugin can be loaded into Wireshark.
 ### Prerequisites
 
 - Wireshark is installed.
-- Download `fmi_ls_bus.lua` from this homepage.
+- Download `fmi_ls_bus.lua` from this homepage (see the corrosponding folder).
 - Lua support is enabled in the installed Wireshark version.
 
 ---
