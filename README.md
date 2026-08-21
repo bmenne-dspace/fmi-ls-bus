@@ -159,6 +159,8 @@ The [FMI-LS-BUS Wireshark PlugIn] extends Wireshark with native support for the 
 
 The plugin automatically detects FMI-LS-BUS messages and decodes all protocol operations into a clear and structured representation. Instead of manually interpreting raw data or hexadecimal values, users are provided with a human-readable view of message contents, parameters, and status information.
 
+Please note that this only refers to the Wireshark plugin itself. The importer (e.g., [dSPACE VEOS](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)) must first be able to create a .pcap file, which can then be read by Wireshark.
+
 ## Cross-Check Models
 
 The FMI Cross-Check is an official Modelica Association initiative that ensures interoperability and compliance between simulation tools supporting the Functional Mock-up Interface (FMI) standard. The Cross-Check allows vendors to test their exported or imported Functional Mock-up Units (FMUs) against other tools to verify consistent simulation results.
