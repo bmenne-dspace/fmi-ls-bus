@@ -44,7 +44,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ----------------------------------------------------------------------------
 ]]
 
-local fmi_ls_bus = Proto("fmi_ls_bus", "FMI LS BUS")
+local fmi_ls_bus = Proto("fmi_ls_bus", "FMI-LS-BUS")
 local fmi_ls_bus_can = Proto("fmi_ls_bus_can", "FMI Layered Standard Bus (CAN)")
 local fmi_ls_bus_lin = Proto("fmi_ls_bus_lin", "FMI Layered Standard Bus (LIN)")
 local fmi_ls_bus_eth = Proto("fmi_ls_bus_eth", "FMI Layered Standard Bus (Ethernet)")
@@ -386,13 +386,13 @@ local function dissect(protocol, buffer, pinfo, tree)
     local is_ignored = ignored_reason ~= nil
 
     local displayed_length = math.max(operation_length, 8)
-    local subtree = tree:add(fmi_ls_bus, buffer(0, displayed_length), "FMI LS BUS Operation")
-    subtree:set_text("FMI LS BUS Operation: " .. operation_name)
+    local subtree = tree:add(fmi_ls_bus, buffer(0, displayed_length), "FMI-LS-BUS Operation")
+    subtree:set_text("FMI-LS-BUS Operation: " .. operation_name)
     subtree:add_le(fields.opcode, buffer(0, 4))
     subtree:add_le(fields.operation_length, buffer(4, 4))
     decoders[protocol](subtree, buffer, operation_code, operation_length)
 
-    pinfo.cols.protocol = "FMI LS BUS"
+    pinfo.cols.protocol = "FMI-LS-BUS"
     local status_tag = is_ignored and " [Ignored]" or (is_unsupported and " [Unsupported]" or "")
     pinfo.cols.info = string.format("%s%s (0x%04X)", operation_name, status_tag, operation_code)
 
