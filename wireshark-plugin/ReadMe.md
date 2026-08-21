@@ -17,6 +17,8 @@ By integrating seamlessly into Wireshark, the FMI-LS-BUS plugin enables the user
 
 With the FMI-LS-BUS plugin, the analysis of complex bus communication becomes significantly easier, providing a transparent and comprehensive view of all FMI-LS-BUS operations.
 
+Please note that this only refers to the Wireshark plugin itself. The importer (e.g. [dSPACE VEOS](https://www.dspace.com/en/pub/home/products/sw/simulation_software/veos.cfm)) must first be able to create a `.pcap` file, which can then be read by Wireshark.
+
 ## Integrating the FMI-LS-BUS Plugin into Wireshark
 
 This section describes how the provided plugin can be loaded into Wireshark.
